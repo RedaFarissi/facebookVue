@@ -5,15 +5,13 @@
             return{
                 items:[{icon:"people_alt",name:"Amis"},{icon:"groups",name:"Groups"},{icon:"storefront",name:"Groups"},{icon:"ondemand_video",name:"Watch"},{icon:"update",name:"Souvenirs"},{icon:"bookmark",name:"Enregistements"},{icon:"keyboard_arrow_down",name:"Voir plus"}]
             }
-        },
-        props:['returnAllToDefault'],
+        }, 
         components:{AsideItem}
     }
-    
 </script> 
 
 <template>
-  <aside id="aside" @click="returnAllToDefault">
+  <aside id="aside">
     <a class="content-aside">
         <div class="material-icons" style="font-size:40px;margin-right:9px">account_circle</div>
         <div id="user_name" style="font-weight: 520;"> Reda Eskouni </div>

@@ -1,14 +1,39 @@
 <script>
-    export default{
-        data(){},
-        
-    }
-
+   import NavItem from './nav/NavItem.vue';
+   
+   export default{
+       data(){
+           return{
+               en_ligne_contact:[
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+                   {name:"Fname Lname"},
+               ]
+           }
+       },
+        components:{ NavItem  },
+   }
 </script>
 
 <template>
     
-    <nav id="nav">  
+    <nav id="nav" @click="returnAllToDefault">  
         <p class="Sponsorise"> Sponsorisé </p> 
         <div class="sponsorise1">
             <div class="sponsorise1_img"> 
@@ -30,14 +55,15 @@
         </div>
         <hr style="color:snow;">
         <div class="Contact-ktaba">
-            <div style="font-weight:600;font-size:95%"> Contacts</div>
+            <div style="font-weight:600;font-size:95%;"> Contacts</div>
             <div style="margin-right:5%;">
-                <div class="material-icons" style="margin-left:3px;cursor:pointer;"> video_call </div>
                 <div class="material-icons" style="margin-left:3px;cursor:pointer;"> search </div>
                 <div class="material-icons" style="margin-left:3px;cursor:pointer;"> more_horiz </div>
             </div>
+        </div>        
+        <div id="NAV" v-for="item in en_ligne_contact">
+            <NavItem :name="item.name"  />
         </div>
-        <div id="NAV">  </div>  
     </nav>
 
 </template>
@@ -73,7 +99,6 @@ nav:hover::-webkit-scrollbar-thumb { visibility:visible; }
     position:absolute; right:3px; bottom:3px; 
 }
 .users_name{ color:rgba(255 255 255 / 75%);}
-
 
 @media only screen and ( max-width:1200px ){
     #nav{width: 28.8%;}

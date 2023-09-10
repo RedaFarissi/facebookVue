@@ -1,8 +1,6 @@
 <script>
     export default{
-        data(){
-
-        },
+        data(){  } ,
         props:['icon','name']
     }
 </script>

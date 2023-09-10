@@ -14,7 +14,7 @@
           block:false,
           search_position:{left:"73px"},
           best_friend_en_ligne:[{name:"Saad El Armi"}, {name:"Ñãwfal Mä NìTø"}, {name:"Reda Eskouni"},{name:"Hunter x Hunter"},{name:"Ayoub Zahir"},{name:"Taha Ahat"},{name:"Manal Ariba"},{name:"Jhon Tawr"}, {name:"Adel Homsa"}, {name:"Jhon Tawr"}, {name:"Ali eskouni"}, {name:"Andress Go"}, {name:"Malak El"},],
-
+        
           //headerRight
           header_compte:true,
           header_messanger:true,
@@ -28,10 +28,15 @@
       },
       methods:{
         defaultHederRight(){
-          this.header_menu = true; this.header_compte = true; this.header_messanger = true;  this.header_notification = true;
+          this.header_menu = true; 
+          this.header_compte = true; 
+          this.header_messanger = true;  
+          this.header_notification = true;
         },
         defaultHederLeft(){
-          this.none = true;  this.block = false;  this.search_position.left= "73px";
+          this.none = true;  
+          this.block = false;  
+          this.search_position.left= "73px";
         },
         returnAllToDefault(){
           this.defaultHederLeft();
@@ -91,17 +96,16 @@
       :search="search"
       :arrow_back="arrow_back"
 
-
       :header_compte="header_compte"  :dropCompte="dropCompte"
       :header_messanger="header_messanger" :dropMessanger="dropMessanger" :header_messanger_data="header_messanger_data"  
       :header_menu="header_menu" :dropMenu="dropMenu"
       :header_notification="header_notification" :dropNotification="dropNotification"
     />
-    <Aside 
-      :returnAllToDefault="returnAllToDefault" 
-    />
-    <Nav />
-    <Main />
+    <div @click="returnAllToDefault">
+      <Aside />
+      <Nav />
+      <Main />
+    </div>
     <IconBottomRight />
   </div>
 </template>
