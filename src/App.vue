@@ -4,7 +4,7 @@
   import Nav from './components/Nav.vue';
   import Main from './components/Main.vue';
   import IconBottomRight from './components/IconBottomRight.vue';
-  //import Footer from './components/Footer.vue';
+  import SendMessageBox from './components/SendMessageBox.vue';
 
   export default {
       data(){
@@ -20,11 +20,14 @@
           header_messanger:true,
           header_menu:true,
           header_notification:true,
-          header_messanger_data:[{name:"Reda",message:"Hy"},{name:"Kamal",message:"Hello"},{name:"moro",message:"صباح الخير"},{name:"Mark",message:"Hy"},{name:"Thami",message:"Hy"},{name:"Hadoum",message:"Hy"},{name:"Zaaytra",message:"Hy"},{name:"Reda",message:"Hy"},{name:"thami",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},]
+          header_messanger_data:[{name:"Reda",message:"Hy"},{name:"Kamal",message:"Hello"},{name:"moro",message:"صباح الخير"},{name:"Mark",message:"Hy"},{name:"Thami",message:"Hy"},{name:"Hadoum",message:"Hy"},{name:"Zaaytra",message:"Hy"},{name:"Reda",message:"Hy"},{name:"thami",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},{name:"Reda",message:"Hy"},],
+        
+          //SendMessageBox
+          send_message_box:0,
         }
       },
       components:{
-        Header, Aside, Nav, Main, IconBottomRight 
+        Header, Aside, Nav, Main, IconBottomRight , SendMessageBox
       },
       methods:{
         defaultHederRight(){
@@ -79,7 +82,15 @@
           this.header_menu = true;  this.header_messanger = true;  this.header_compte = true
           this.header_notification = !this.header_notification;   
           event.stopPropagation()
-        }
+        },
+        //SendMessageBox
+        sendMessageBox(){
+          this.send_message_box += 1
+        },
+        clearMessageBox(){
+          this.send_message_box -= 1
+        },
+        
       }
   }
 </script>
@@ -103,10 +114,16 @@
     />
     <div @click="returnAllToDefault">
       <Aside />
-      <Nav />
+      <Nav 
+        :sendMessageBox="sendMessageBox"
+      />
       <Main />
     </div>
     <IconBottomRight />
+    <SendMessageBox 
+      :send_message_box="send_message_box"
+      :clearMessageBox="clearMessageBox"
+    />
   </div>
 </template>
 

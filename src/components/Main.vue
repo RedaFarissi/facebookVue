@@ -104,9 +104,7 @@
                 <div class="creer_selon_div2_div"><img src="../assets/img/logo_fb.png" class="creer_selon_div2_img"></div>
             </div>
         </div>
-        <MainItem />
-        <MainItem />
-        <MainItem />
+      
         <MainItem />
         <MainItem />
         <MainItem />

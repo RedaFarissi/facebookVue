@@ -48,8 +48,8 @@
 
 <style>
 .cadre_for_drop_down{ 
-    position:absolute; top:57px; right:16px ;width:360px; height:400px; background-color:greenyellow; 
-    border-radius:9px;background-color:#242526; padding:9px; color:rgba(255 255 255/75%); 
+    position:absolute; top:57px; right:0px ;width:360px; height:400px; border-radius:9px;
+    background-color:#242526; padding:9px; color:rgba(255 255 255/75%); 
     overflow-y: auto;box-shadow:2px 2px 10px rgba(0 0 0 /35%);
 }
 .cadre_for_drop_down::-webkit-scrollbar { width:8px; }

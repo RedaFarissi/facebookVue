@@ -145,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cadre_for_drop_down menu-list">
+            <div class="cadre_for_drop_down menu-list ms-5">
                 <div style="font-size:20px;font-weight:660;padding-left:2px;margin-top:-1.5px;">Créer</div>    
                 <div class="menu-cadrs" style="padding:6px 0px;margin-top:15px;color:white;display:flex;align-items:center;"> 
                     <div style="margin-right:10px;margin-left:7px;width:36px;height:36px;background-color:rgba(255 255 255/20%);border-radius:50%;display:flex;align-items:center;justify-content:center;">

@@ -59,7 +59,7 @@
 </template>
 
 <style>
-    #messanger{ height: 700px ; }
+    #messanger{ height: 90vh ; }
     #messanger-header-div{ display:flex;justify-content:space-between; align-items:center; height:45px; margin-left:7.5px;}
     #messanger-header-h4{color:rgba(255 255 255/85%);font-weight:750;padding-bottom:0px;margin-top:10px}
     #messanger-header-icon{display:flex;justify-content:space-around;align-items:center;width:48%;margin-left:8px;margin-top:4px;}

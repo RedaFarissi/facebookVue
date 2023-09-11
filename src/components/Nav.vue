@@ -27,7 +27,8 @@
                ]
            }
        },
-        components:{ NavItem  },
+       props:['sendMessageBox'],
+       components:{ NavItem  },
    }
 </script>
 
@@ -62,7 +63,7 @@
             </div>
         </div>        
         <div id="NAV" v-for="item in en_ligne_contact">
-            <NavItem :name="item.name"  />
+            <NavItem :name="item.name" :sendMessageBox="sendMessageBox" />
         </div>
     </nav>
 
