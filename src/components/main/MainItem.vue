@@ -72,7 +72,9 @@
             <img src="../../assets/img/logo_fb.png">
         </div>
         <div class="section_vue">
-            <span class="material-icons section_vue_part1" style="font-size:95%;background-color:#2e89ff;padding:4.8px;border-radius:50%;cursor:pointer;"> thumb_up </span>
+            <div class="d-flex align-items-center ps-2">
+                0<span class="material-icons section_vue_part1" style="font-size:95%;background-color:#2e89ff;padding:4.8px;border-radius:50%;cursor:pointer;"> thumb_up </span>
+            </div>
             <div class="section_vue_part2"> <span>0</span> commentairs </div>
         </div>
         <hr style="width:90%; margin-left:5%;margin-top:-2px;margin-bottom:7px; color:rgba(255 255 255/75%);">

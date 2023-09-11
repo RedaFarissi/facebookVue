@@ -20,7 +20,7 @@
             <div class="sending-header-part1">
                 <div>
                     <div class="material-icons" style="font-size: 34px;"> account_circle </div>
-                    <div class="en-lign" style="position:absolute;top:24px;left:39px;width:13px;height:13px;">
+                    <div class="en-lign" style="position:absolute;top:24px;left:29px;width:13px;height:13px;">
                         <div style="width:10px;height:10px;"></div>
                     </div>
                 </div>
